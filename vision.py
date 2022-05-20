@@ -53,8 +53,6 @@ while True:
     if txt:print(txt)
      
     engine = pyttsx3.init()
-    for voice in engine.getProperty('voices'):
-        print(voice)
     engine.say(txt)
     engine.runAndWait()
     if cv2.waitKey(20) & 0xFF==ord('d'):
